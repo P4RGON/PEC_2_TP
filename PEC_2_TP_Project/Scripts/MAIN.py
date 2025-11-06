@@ -1,3 +1,20 @@
+def menuInicio():
+    bucle = True
+    while bucle:
+        print("*****MENU DE OPCIONES****+")
+        print("1) Ejecutar Ejercicio 1")
+        print("2) Ejecutar Ejercicio 2")
+        print("6) Salir")
+        inputTecla = input("Introduzca que quiere realizar: ")
+        if inputTecla == "1":
+            ejercicio1()
+        elif inputTecla == "2":
+            ejercicio2()
+        elif inputTecla == "6":
+            bucle = False
+            print("Saliendo")
+        
+
 def ejercicio1():
     bucle = True
     while bucle:
@@ -49,5 +66,4 @@ def ejercicio2():
         bucle = False
 
 if __name__ == "__main__":
-    #ejercicio1()
-    ejercicio2()
+    menuInicio()
