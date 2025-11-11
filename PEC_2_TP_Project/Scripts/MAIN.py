@@ -21,7 +21,7 @@ def menuInicio():
             bucle = False
         elif opcion in opciones:
             _, funcion = opciones[opcion]
-            print("\n")
+            print("\n ")
             funcion()
         else:
             print("Opción no válida")
@@ -113,7 +113,7 @@ def ejercicio4():
         for i in range(len(str(num))):
             sumNum+=int(str(num)[i]) #Aqui hago esta conversion para conseguir el valor que necesito sin tener que crear una lista
         steps.append(sumNum)
-        num=sumnum
+        num=sumNum
     print(f"El numero sintetizado de {original} es {num}")
     print("Los pasos son: ")
     for j in steps:
